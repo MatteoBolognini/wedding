@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alice & Matteo</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="12-05-2023" name="keywords">
+    <meta content="12-05-2023" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Alice <span class="text-primary">&</span> Matteo</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#story" class="nav-item nav-link">Il Matrimonio</a>
+                <a href="#hotel" class="nav-item nav-link">Hotel</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Alice <span class="text-primary">&</span> Matteo</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#regali" class="nav-item nav-link">Regali</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#contatti" class="nav-item nav-link">Contatti</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/us.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Alice & Matteo</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Ci sposiamo!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Il Matrimonio</h6>
+                <h1 class="font-secondary display-4">Dettagli dell'evento</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/chiesa.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Cerimonia religiosa</h4>
+                            <p class="text-uppercase mb-2">Venerdi 12 Maggio 2023 ore 11:00</p>
+                            <p>
+                                La giornata inizia con la celebrazione del matrimonio in chiesa.
+                            </p>
+                            <p>Location:
+                                Chiesa di Sforzatica Santa Maria
+                                Via Santa Maria, 1, 24044 Dalmine BG, Italia
+                            </p>
+                            <a href="https://goo.gl/maps/qMEmqLKGtJ3ycViN7/">Come arrivare</a>                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/cantorie.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Ricevimento</h4>
+                            <p class="text-uppercase mb-2">Venerdi 12 Maggio 2023 ore 13:00</p>
+                            <p>Dopo la cerimonia festeggeremo tutti insieme presso Le Cantorie.</p>
+                            <p>Location:
+                                Via Castello di Casaglio, 24/25, 25064 Gussago BS, Italy
+                            </p>
+                            <a href="https://goo.gl/maps/pTwpp69qdgtAk2fN7/">Come arrivare</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/carretto.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Afterparty</h4>
+                            <p class="text-uppercase mb-2">Sabato 13 Maggio 2023 ore 17:00</p>
+                            <p>Il giorno successivo al matrimonio tutti gli amici sono invitati per ad una grigliata all'Agriturismo Cascina Carretto.</p>
+                            <p>Location:
+                                Via Costa, 60, 25030 Erbusco BS, Italy
+                            </p>
+                            <a href="https://g.page/cascina-carretto?share">Come arrivare</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+    <!-- Hotel Start -->
+    <div class="container-fluid py-5" id="hotel">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Hotel</h6>
+                <h1 class="font-secondary display-4">Hotel e alloggi</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Se avete bisogno di una camera in albergo contattate: Agriturismo Cascina Carretto all'indirizzo email: info@cascinacarretto.it</h5>
+                </p>
+                <p>Il giorno del matrimonio sara' disponibile un servizio navetta che portera' gli ospiti:</p>
+                <p>-  dall'Agriturismo Cascina Carretto alla chiesa</p>
+                <p>-  dalla chiesa al ricevimento</p>
+                <p>-  dal ricevimento all'Agriturismo Cascina Carretto</p>
+                <p>Orari da definirsi</p>
+                <a href="https://g.page/cascina-carretto?share">Come arrivare</a>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!-- Hotel End -->
+
+    <!-- Regali Start -->
+        <div class="container-fluid py-5" id="regali">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Regali</h6>
+                    <h1 class="font-secondary display-4">Regali</h1>
+                    <i class="far fa-heart text-dark"></i>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                    </p>
+                    <p>La vostra presenza sara' per noi il dono piu' bello.</p>
+                    <p>Se desiderate farci un regalo, aiutateci a realizzare un sogno: il nostro viaggio di nozze </p>
+                    <p>Nome conto: Mr M Bolognini</p>
+                    <p>IBAN: GB84HBUK40116021149733</p>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    <!-- Regali End -->
+
+    <!-- RSVP Start -->
+
+    <div class="container-fluid py-5" id="regali">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">RSVP</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+        </div>
+    </div>
+    
+    <iframe
+      id="JotFormIFrame-223455860544055"
+      title="IT"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/223455860544055"
+      frameborder="0"
+      style="
+      min-width: 100%;
+      height:539px;
+      border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-223455860544055");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+          src = src.substr(0, src.indexOf("?"))
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      window.isPermitted = function(originUrl, whitelisted_domains) {
+        var url = document.createElement('a');
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if( typeof hostname !== 'undefined' ) {
+          whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                  result = true;
+              }
+          });
+          return result;
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+    <!-- RSVP End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contatti" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <div class="container text-center py-5">
+                <p class="text-white" href="#">Per qualsiasi evenienza siamo a disposione:</p>
+                <p class="text-white" href="#">Email: aliceprussiani@gmail.com</p>
+                <p class="text-white" href="#"> WhatsApp +39 3487381532</p>
+                <p class="text-white" href="#"> UK +44 7842563045</p>
+
+            </div>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- jQuery v3x -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap v5 Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Contact Form Javascript -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact-form.js"></script>
+    
+</body>
+
+</html>
